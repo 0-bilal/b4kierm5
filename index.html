@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>SUAAD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="ico/Suaad.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="hearts-container" id="heartsContainer"></div>
+    
+    <!-- إشعارات -->
+    <div id="notification" class="notification"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1 class="title">ياسعاد ما أَنتِ إلّا بُدعَةُ خُلِقَت مِن غِيرِ طينِِ</h1>
+            <p class="subtitle">وخَلقُ الناسِ مِن طينِ</p>
+            <p class="subtitle">كل يوم يمر يزيدني شوقاً إليك</p>
+        </div>
+
+        <div class="poetry-container">
+            <h3 class="poetry-title">🌹 بيت اليوم 🌹</h3>
+            <p class="poetry-text" id="poetryText">جاري تحميل البيت الشعري...</p>
+            <div class="poetry-actions">
+                <button class="action-btn" onclick="saveFavorite()">💖 حبيت البيت</button>
+
+            </div>
+        </div>
+
+        <div class="countdown-container" id="countdownContainer">
+            <div class="countdown-display">
+                <div class="time-unit">
+                    <span class="time-number" id="days">0</span>
+                    <span class="time-label">يوم</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="hours">0</span>
+                    <span class="time-label">ساعة</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="minutes">0</span>
+                    <span class="time-label">دقيقة</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم إرسال الرسائل -->
+        <div class="message-section">
+            <h3>💌 أرسل رسالة لي</h3>
+            <div class="message-form">
+                <textarea class="message-input" id="messageText" placeholder="اكتب رسالتك هنا... ❤️"></textarea>
+                <button class="send-btn" onclick="sendMessage()">إرسال الرسالة 📨</button>
+            </div>
+        </div>
+    <script src="js/script.js"></script>
+    <script src="js/poetry-lines.js"></script>
+
+</body>
+</html>
